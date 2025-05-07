@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<div>
+    <nav class="navbar">
+        <div class="navdiv">
+            <img src="{{ url_for('static', filename='img/LESSA.png') }}" alt="Logo" width="100">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+<body>
+<br>
+        <section class="hero">
+            <div class="hero-text">
+                <br>
+                <h2>Somos LESSA</h2>
+                <h4>Conectando manos, uniendo voces</h4>
+                <p>
+                    ¡Bienvenido a LESSA! Una plataforma interactiva pensada para romper las barreras de comunicación y construir un mundo más inclusivo.
+                    Aquí no solo aprenderás el Lenguaje de Señas Salvadoreño (LESSA), sino que también formarás parte de una comunidad que valora la diversidad, la inclusión y el respeto por todas las formas de comunicación.
+                </p>
+                <p>
+                    Queremos inspirarte a descubrir una nueva forma de comunicarte, aprender a tu ritmo y conectar con una causa transformadora. Tu viaje de aprendizaje empieza aquí.
+                </p>
+            </div>
+            <div class="hero-action">
+                <h3>¡La forma divertida, efectiva y gratis de aprender LESSA!</h3>
+                <img src="{{ url_for('static', filename='img/lessa.png') }}" alt="LESSA Logo" class="logo-lessa">
+                <a href="#" class="btn-primary">EMPIEZA AHORA</a>
+                <a href="#" class="btn-outline">YA TENGO UNA CUENTA</a>
+            </div>
+        </section>
+        <section class="tex1">
+            <div class="qs-img">
+                <img src="{{ url_for('static', filename='img/equipo.png') }}" alt="Equipo">
+            </div>
+            <div class="qs-text">
+                <h3>¿Quiénes Somos?</h3>
+                <p>
+                    Somos un equipo de jóvenes desarrolladores apasionados por la inclusión, comprometidos con crear soluciones tecnológicas accesibles para todos y superar nuevos retos que pongan a prueba nuestras capacidades.
+                </p>
+                <p>
+                    LESSA nace como una respuesta a los retos que enfrentan las personas con discapacidad auditiva en el acceso a la información.
+                </p>
+            </div>
+        </section>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>@LESSA WEB APP | Derechos reservados &copy;2025</p>
+        <a href="#" >
+            <img src="{{ url_for('static', filename='img/inf.png') }}" alt="informacion" width="50" class="corner-img">
+        </a>
+    </div>
+</footer>
+</html>
