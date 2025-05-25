@@ -6,9 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html') 
 
-@app.route('/home')
+@app.route('/perfil')
 def  home():
-    return render_template('home.html')
+    return render_template('perfil.html')
 
 @app.route('/inf')
 def  inf():
@@ -17,6 +17,10 @@ def  inf():
 @app.route('/login')
 def  login():
     return render_template('login.html')
+
+@app.route('/ventana')
+def  ventana():
+    return render_template('ventana.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
